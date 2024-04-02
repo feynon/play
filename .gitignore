@@ -1,0 +1,41 @@
+# macOS system files
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# TypeScript/JavaScript build output
+dist/
+build/
+out/
+
+# Rust build output
+target/
+
+# IDE and editor files
+.vscode/
+
+# Compiled binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs and debugging files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# Deno cache
+.cache/
+
+# Deno test output
+deno-test-results.json
+
+# Deno coverage report
+coverage/
+
+# Deno compiled output
+deno.js
+deno.d.ts
