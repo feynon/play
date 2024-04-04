@@ -34,6 +34,7 @@ jobs:
 
       - name: Build step
         run: "npm run build"
+        working-directory: ./host
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
