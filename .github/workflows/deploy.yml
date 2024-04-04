@@ -30,6 +30,7 @@ jobs:
 
       - name: Install step
         run: "npm install"
+        working-directory: ./host
 
       - name: Build step
         run: "npm run build"
