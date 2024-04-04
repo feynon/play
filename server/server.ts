@@ -1,14 +1,12 @@
-import createPlugin from 'https://raw.githubusercontent.com/extism/js-sdk/main/src/mod.ts';
+import { Application, send, Context } from "https://deno.land/x/oak/mod.ts";
 
-const plugin = await createPlugin(
-    'https://github.com/extism/plugins/releases/latest/download/count_vowels.wasm',
-    { useWasi: true }
-);
+const app = new Application();
 
-let out = await plugin.call("count_vowels", "Hello, World!");
-console.log(out.text())
-// => '{"count":3,"total":3,"vowels":"aeiouAEIOU"}'
-
-Deno.serve((_request: Request) => {
-    return new Response("Hello, world!");
+app.use(async (context: Context) => {
+  await send(context, context.request.url.pathname, {
+    root: `${Deno.cwd()}/../host/dist`,
+    index: "index.html",
   });
+});1
+
+await app.listen({ port: 8000 });

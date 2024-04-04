@@ -1,2 +1,2 @@
 # play
-outcome independent hacks
+Outcome independent hacks.

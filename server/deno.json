@@ -5,7 +5,8 @@
       "**/node_modules"
     ],
     "include": [
-      "./server.ts"
+      "./server.ts",
+      "../host/dist/**/*"
     ],
     "entrypoint": "server.ts"
   }
