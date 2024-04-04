@@ -4,9 +4,9 @@ const app = new Application();
 
 app.use(async (context: Context) => {
   await send(context, context.request.url.pathname, {
-    root: `${Deno.cwd()}/../host/dist`,
+    root: `${Deno.cwd()}/dist`,
     index: "index.html",
   });
-});1
+});
 
 await app.listen({ port: 8000 });
