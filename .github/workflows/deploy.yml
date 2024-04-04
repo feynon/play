@@ -40,5 +40,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "feynon-play"
-          entrypoint: "./server/dist/server.ts"
+          entrypoint: "/server/server.ts"
           root: "host"
