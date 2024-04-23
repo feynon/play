@@ -1,7 +1,7 @@
 # play
 > Work sucks. Play works.
 
-Dynamic linker to provide flexible extension mechanism for Rust compiled WebAssembly in browsers.
+Dynamic linker that provides a flexible extension mechanism for Rust-compiled WebAssembly in browsers.
 
 # Motivation
 
