@@ -11,4 +11,4 @@ app.use(async (context: Context) => {
 
 await app.listen({ port: 8000 });
 
-// TODO: Server Wasm blobs with Deno Deploy
+// TODO: Serve Wasm blobs with Deno Deploy
